@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "us-east-1"
+}
+
 # Creating bucket
 resource "aws_s3_bucket" "website" {
   bucket = "gracelesstarnishedemboldenedbytheflameofambition"
