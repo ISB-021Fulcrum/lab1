@@ -7,10 +7,8 @@ terraform {
   }
 }
 
-# Configure AWS provider and creds
 provider "aws" {
-  region                   = "us-east-1"
-  
+  region = "us-east-1"
 }
 
 # Get the latest Amazon Linux AMI ID
